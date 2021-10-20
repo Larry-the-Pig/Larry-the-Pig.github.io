@@ -87,9 +87,9 @@ function game() {
         rocket.rotation = 0.0;
 
     if (upPress) {
-        rocket.speedX += (Math.cos(rocket.rotation) * 1);
+        rocket.speedX += (Math.cos(rocket.rotation) * 0.5);
 
-        rocket.speedY += (Math.sin(rocket.rotation) * 1);
+        rocket.speedY += (Math.sin(rocket.rotation) * 0.5);
     }
     console.log(rocket.rotation);
     rocket.x+=rocket.speedX;
