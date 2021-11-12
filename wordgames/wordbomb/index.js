@@ -1,5 +1,6 @@
 const vowels = ["a", "e", "i", "o", "u"];
 const notVowels = ["b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "s", "y", "z"];
+let usedWords = [];
 const correctSfx = new Audio('res/correct.ogg');
 const incorrectSfx = new Audio('res/incorrect.ogg');
 const input = document.getElementById("input");
@@ -23,7 +24,10 @@ function generatePhrase() {
 function checkWord() {
     let isCorrect = false;
     words.forEach(word => {
-        if (input.value.toLowerCase() == word && input.value.toLowerCase().includes(phrase)) isCorrect = true;
+        if (input.value.toLowerCase() == word && input.value.toLowerCase().includes(phrase) && !checkUsed()) {
+            isCorrect = true;
+            usedWords.push(input.value.toLowerCase());
+        }
     });
 
     if (isCorrect) {
@@ -42,6 +46,16 @@ function checkWord() {
             phraseE.style = "color: white";
         }, 500);
     }
+}
+
+function checkUsed() {
+    let used = false;
+    usedWords.forEach(usedWord => {
+        if (input.value == usedWord) {
+            used = true;
+        }
+    });
+    return used;
 }
 
 function setPhrase() {
