@@ -1,0 +1,17 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: bisque;
+    color: rgb(158, 134, 105);
+    text-align: center;
+}
+
+#input {
+    font-size: larger;
+    padding: 5px;
+    border: 3px solid rgb(158, 134, 105);;
+    border-radius: 7px;
+}
+
+#output {
+    color:black;
+}

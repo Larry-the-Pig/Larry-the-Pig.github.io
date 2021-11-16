@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(41, 41, 41);
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+#input {
+    font-size: larger;
+    padding: 5px;
+    border: 3px solid azure;
+    border-radius: 7px;
+}
+
+div {
+    margin: 7px;
+}
