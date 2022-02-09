@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  min-height: 100vh;
+  margin-bottom: 2rem;
+  background-color: #E0C9A6;
+  margin: 0;
+  padding: 0; }
+
+nav {
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  background-color: #bf0c3d; }
+  nav .nav-button {
+    text-align: center;
+    background-color: #3e40c3;
+    padding: 1rem; }
+    nav .nav-button:hover {
+      background-color: #31329d; }
+  nav .active {
+    background-color: #00205b; }
+    nav .active:hover {
+      background-color: #000e28; }
+  nav a {
+    color: white; }
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("res/background.jpg");
+  background-size: 100%;
+  color: white;
+  text-align: center; }
+  header h1 {
+    font-weight: 400;
+    font-size: 48px;
+    padding: 2rem 0;
+    margin: 0; }
+
+main {
+  text-align: center; }
+  main a {
+    color: #3e40c3; }
+  main section {
+    background-color: white;
+    text-align: left;
+    padding: 1rem;
+    margin: 2rem 10rem;
+    border-radius: 0.5rem;
+    border: none;
+    -webkit-box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 13px 5px rgba(0, 0, 0, 0.5); }
+    main section img {
+      height: 5em;
+      border-radius: 0.5rem; }
+    main section br {
+      display: block;
+      content: "";
+      margin-top: 1em; }
+
+footer {
+  position: fixed;
+  border-top-right-radius: 0.5rem;
+  bottom: 0;
+  background-color: #0e0e0e;
+  color: white; }
+  footer span {
+    padding: 0 0.5rem; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  padding-left: 0;
+  list-style-type: none; }
+
+h1 {
+  margin: 0.5em 0;
+  font-weight: 600;
+  font-size: 40px; }
+
+@media only screen and (max-width: 900px) {
+  main section {
+    margin: 2rem auto;
+    width: 85%; }
+    main section img {
+      width: 75%;
+      height: auto; } }
+svg {
+  width: 1em;
+  height: 1em; }
+
+/*# sourceMappingURL=styles.css.map */
