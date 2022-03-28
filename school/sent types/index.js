@@ -9,7 +9,6 @@ let currentSkill = 1;
 function generateSentence(skill) {
     currentSent = Math.floor(Math.random() * skills[skill].length)
 
-    //sets the text content of the page header to the current sentence
     header.textContent = skills[skill][currentSent].sentence + " (Current Skill: " + currentSkill + ")";
 }
 
